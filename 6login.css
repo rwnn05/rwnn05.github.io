@@ -1,1 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Farro', sans-serif;
+}
+
+header{
+  background: #8ebdc4ff;
+  padding-bottom: 40px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:1000;/*Prob makes it seen when FIXED*/
+  display: flex;
+  align-items: center;
+  transition: 0.5%;
+}
+
+header .name{
+  color: #fdf5e6ff;
+  padding-left: 15px;
+  padding-right: 235px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 20px; 
+  text-decoration: none;
+}
+
+header .menu{
+  position:relative;
+  display:flex;
+}
+
+header .menu li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header .menu li a{
+  text-decoration: none;
+  color: #fdf5e6ff;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background:#8ebdc4ff;
+  margin-bottom;10px;
+}
+
+header .menu li a:hover{
+  background: #fa8072ff;
+}
+
+body {
+  background: #8ebdc4ff;
+  
+}
+
+
+.login-div{
+  /*makes it centered with auto*/
+  margin:100px auto;
+  width: 500px;
+  background-color: #fdf5e6ff;
+  padding: 60px; 
+  
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+
+.title{
+  text-align: center;
+  color:#fa8072ff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.subtitle{
+  text-align: center;
+  color: #fa8072ff; 
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.form{
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form input{
+  font-size: 15px;
+  padding: 10px 20px 10px 5px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.username, .password{
+  display: block;
+  border-radius: 30px;
+  border-bottom: 1px solid;
+  border-color: rgba(0,25,100,0.2);
+  padding: 15px;
+  margin: 10px 0;
+  
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding 5px 0px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.options label{
+  color: #60a4afff;
+
+}
+
+button.login-button{
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: #fa8072ff;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.login-button1{
+  color: #fff;
+}
+
+.new-here{
+  text-align: center; 
+}
+
+a{
+  text-decoration: none;
+  color: #60a4afff;
+}
+
+
 
