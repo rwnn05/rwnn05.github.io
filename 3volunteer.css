@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Farro', sans-serif;
+}
+
+
+header{
+  background: #cd8171ff;
+  padding-bottom: 40px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:1000;/*Prob makes it seen when FIXED*/
+  display: flex;
+  align-items: center;
+  transition: 0.5%;
+}
+
+header .name{
+  color: #fdf5e6ff;
+  padding-left: 15px;
+  padding-right: 235px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 20px; 
+  text-decoration: none;
+}
+header .menu{
+  position:relative;
+  display:flex;
+}
+
+header .menu li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+header .menu li a{
+  text-decoration: none;
+  color: #fdf5e6ff;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background:#cd8171ff;
+  margin-bottom:10px;
+}
+
+header .menu li a:hover{
+  background: #92dce5ff;
+}
+
+
+.title1{
+  background: #fdf5e6ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.title1 h1{
+  text-align: center;
+  color: #fa8072ff;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 175px;
+  margin-bottom: 10px;
+}
+
+.volunteer{
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  background: #fdf5e6ff;
+}
+
+.column1{
+  flex: 50%;
+  padding:10px 25px;
+  border-width: thick;
+  margin-left: 30px;
+  margin-right: 5px;
+  margin-top: 130px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fa8072ff;
+}
+
+.column1 .description{
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: none;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  text-align: left;
+  color: #cd8171ff;
+}
+
+.column1 .applybutton{
+  color: #fdf5e6ff; 
+  border-radius: 25px;
+  border: 2px solid;
+  margin-top: 45px;
+  padding: 13px 50px; 
+  margin-left: 5px;
+  text-decoration: none; /*so then there is no line underneath :) */
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #cd8171ff;
+}
+
+.column1 .applybutton:hover{
+  background: #fa8072ff;
+  color: #fdf5e6ff;
+}
+
+
+.line{
+  border: solid;
+  height: 500px;
+  border-color: rgba(130,0,10, 0.5);
+  margin-right: 30px
+}
+.column2 {
+  flex: 5%;
+  margin-right: 130px; 
+}
+.column2 .heading1{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fa8072ff;
+}
+
+.column2 .requirements{
+  margin-top: 15px;
+  font-size: 17px;
+  text-transform: none;
+  color: #cd8171ff;
+  
+}
+
+.column2 .heading2{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fa8072ff;
+  margin-top: 30px;
+}
+
+.column2 .benefits{
+  margin-top: 15px;
+  font-size: 17px;
+  text-transform: none;
+  color: #cd8171ff;
+}
+
+
