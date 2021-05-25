@@ -18,13 +18,12 @@ header{
   z-index:1000;/*Prob makes it seen when FIXED*/
   display: flex;
   align-items: center;
-  transition: 0.5%;
 }
 
 header .name{
   color: #fdf5e6ff;
   padding-left: 15px;
-  padding-right: 235px;
+  padding-right: 205px;
   padding-bottom: 30px;
   padding-top: 30px;
   font-size: 20px; 
@@ -45,7 +44,7 @@ header .menu li a{
   text-decoration: none;
   color: #fdf5e6ff;
   border-radius: 25px;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px;
   background:#8ebdc4ff;
   margin-bottom;10px;
 }
@@ -54,132 +53,324 @@ header .menu li a:hover{
   background: #fa8072ff;
 }
 
-
-/*Here is the ACTUAL CSS for the ACTUAL PAGE*/
-
-.row{
+.banner{
+  position: relative;
   width: 100%;
-  min-height: 100vh;
-  justify-content: center;
-  background: #fdf5e6ff;
-  position: relative;
+  min-height: 90vh;
   display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
-.title{
-  background: #fdf5e6ff;
-  position: relative;
-  display: flex;
-  justify-content: center;
+.banner .content{
+  text-align: center; 
 }
-.title h1{
+
+.banner .content h1{
   text-align: center;
-  color: #60a4afff;;
+  font-weight: normal;
+  color: #fdf5e6ff;
   font-size: 50px;
   text-transform: uppercase;
-  margin-top: 200px;
-  margin-bottom: 20px;
 }
 
-p{
-  background:#fdf5e6ff;
-  color: #60a4afff;;
-  font-size: 15px;
+.links{
+  margin-top: 50px;
   text-align: center;
-  border-spacing: 5px;
-  padding: 20px;
-  word-spacing: 2px;
+}
+
+.login{
+  color: #8ebdc4ff; 
+  border-radius: 25px; 
+  background: #fdf5e6ff;
+  padding: 15px 50px; 
+  margin-right: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* For Animation!!! Hovering Effects */
+.login:hover{
+  background: #fa8072ff;
+  color: #fdf5e6ff;
+}
+
+
+.signup{
+  color: #fdf5e6ff; 
+  border-radius: 25px;
+  border: 2px solid;
+  padding: 13px 40px; 
+  margin-left: 5px;
+  text-decoration: none; /*so then there is no line underneath :) */
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #8ebdc4ff;
+}
+
+.signup:hover{
+  color: #fa8072ff;
+}
+.signup:active{
   
 }
 
-.row .classes-div{
+.banner .content .display{
+  position: relative;
+  display: flex;
+  width:100px;
+  height: 200px;
+  align-self: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+.banner .content .display img{
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  margin-right: 45px;
+  filter: sepia(45%);
+}
+
+.banner .content .display img:hover{
+  transform: scale(1.1);
+  animation: shake 0.6s infinite;
+}
+
+/*Like a function to make animation 
+work */
+@keyframes shake{
+  0%{
+    transform: translate(0px, 0px) rotate(0deg)
+  }
+  25%{
+    transform: translate(1px, 1px) rotate(1deg)
+  }
+  50%{
+    transform: translate(-1px, -1px) rotate(-1deg)
+  }
+  75%{
+    transform: translate(2px, -1px) rotate(2deg)
+  }
+  100%{
+    transform: translate(-1px, 1px) rotate(-1deg)
+  }
+}
+
+
+.banner .content .scrolldown{
+  position:relative;
+  width: 100%;
+  justify-content: center;
+  margin-top: 25px;
+  
+}
+
+.banner .content .scrolldown p:hover{
+  color: #fa8072ff;
+}
+
+.banner .content .scrolldown p {
+  color: #fdf5e6ff;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* How to make the ARROW under "Learn More"
+
+NOTE: the before and after result in TWO objects*/
+.banner .arrow::after,.banner .arrow::before{
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 10px;
+  background: #fdf5e6ff;
+  bottom: -1;
+  z-index: 100;
+}
+.banner .arrow::before{
+  right: 50%;
+  transform: skew(0,20deg)/*skew distorts the shape by deg(degrees) - adding the 0 at the beginning turns the object*/
+
+}
+
+.banner .arrow::after{
+  left: 50%;
+  transform: skew(0,-20deg)/*skew 
+    distorts the shape by deg(degrees) - adding the 0 at the beginning turns the object*/
+} 
+
+.banner .arrow:hover{
+  background: #fa8072ff;
+}
+
+
+/*FIX THIS BANNER*/
+.banner .dip::after,.banner .dip::before{
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 120px;
+  background: #8ebdc4ff;
+  bottom: -1;
+  z-index: 100;
+}
+.banner .dip::before{
+  right: 50%;
+  transform: skew(0,20deg)
+}
+.banner .dip::after{
+  left: 50%;
+  transform: skew(0,-20deg)
+}
+
+
+.aboutus{
+  position: relative;
+  padding: 70px;
+  background:  #fdf5e6ff;
+  height: 75vh; 
+}
+
+
+.row1{
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 30px 125px;
-  padding: 20px;
+  margin-top: 2px;
+  min-height: 200px; 
+}
+.row1 .inside{
+  position: relative;
+  width: 60%;
 }
 
-.row .classes-div .math{
-  position: relative;
-  width: 250px;
-  height: 250px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: #60a4afff;
+
+h2{
+  color:#8ebdc4ff; 
+  font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
 }
 
-.row .classes-div .math img{
+.row1 .inside p{
+  color: #8ebdc4ff;
+  padding-top: 15px;
+  word-spacing: 2px;
+}
+
+
+.row1 .inside .img1{
+  position: relative;
+  width: 100%;
+  height: 100%;
+} 
+.row1 .inside .img1 img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.socials{
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  background: #8ebdc4ff;
+  color: #fdf5e6ff;
+  padding-left:20px;
+}
+
+.socials .contact{
+  flex: 50%;
+  right: 50%;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+.socials .contact .declare{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.socials .contact .email{
+  font-weight: bold;
+}
+
+.socials .follow{
+  flex: 50%;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.socials .follow .declare2{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.socials .follow .icons{
+  display:flex;
+  max-width: 25vh;
+  min-height: 15vh;
+  margin-bottom: 50px;
+}
+
+.socials .follow .icons .instagram{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.socials .follow .icons .facebook{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.socials .follow .icons .instagram img, .facebook img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: invert(90%) sepia(35%);
 }
 
-.row .classes-div .math .MathD{
-  font-size: 15px;
-  font-weight: normal;
-  text-transform: none;
-  word-spacing: 2px;
-  margin-top: 5px;
+.ending{
+  background: #8ebdc4ff;
+  padding: 15px;
+  color: #fdf5e6ff;
+  text-decoration: none;
+  font-size: 13px;
+  border-right: none;
+  border-bottom-color: #8ebdc4ff;
+  border-left-color: #8ebdc4ff;
+  border-right-color: #8ebdc4ff;
+  border-style: dashed; 
   
 }
 
-.row .classes-div .science{
-  position: relative;
-  width: 250px;
-  height: 250px;
-  text-align: center;
+.ending .attributions li{
+  padding-left: 15px; 
+}
+
+.ending .attributions a{
   text-decoration: none;
-  font-weight: bold;
-  color: #60a4afff;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-.row .classes-div .science img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  color: #fdf5e6ff;
 }
 
-.row .classes-div .science .ScienceD{
-  font-size: 15px;
-  font-weight: normal;
-  text-transform: none;
-  word-spacing: 2px;
-  margin-top: 5px;
-}
 
-.row .classes-div .writing{
-  position: relative;
-  width: 250px;
-  height: 250px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: #60a4afff;
-  font-size: 40px;
-  
-  text-transform: uppercase;
-}
-.row .classes-div .writing img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.row .classes-div .writing .WritingD{
-  font-size: 15px;
-  font-weight: normal;
-  text-transform: none;
-  word-spacing: 2px;
-  margin-top: 5px;
-}
-
-body {
-  background: white;
-  min-height: 900px; 
-}
