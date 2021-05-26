@@ -24,6 +24,12 @@ header{
   /*linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%)*/ 
 }
 
+header.sticky{
+  background: #60a4afff;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
 header .name{
   color: #fdf5e6ff;
   padding-left: 15px;
