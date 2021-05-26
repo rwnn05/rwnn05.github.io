@@ -19,7 +19,7 @@ header{
   z-index:1000;/*Prob makes it seen when FIXED*/
   display: flex;
   align-items: center;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 header.sticky{
