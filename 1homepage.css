@@ -133,6 +133,7 @@ header .menu li a:hover{
   background: #fdf5e6ff;
   border-radius: 25px;
   padding: 13px 20px;
+  margin-right: 10px;
   transition: .5s;
 }
 
