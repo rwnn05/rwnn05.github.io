@@ -49,7 +49,7 @@ Here it will be used for the drop down menu (TEMPORARILY ON THE HOME PAGE)-->
 
           <!--<button class ="signup" type = "button" onclick ="document.getElementById('demo1').style.display='block'"> Join Now </button> -->
 
-          <a class="signup" href="#"> Join Now</a>
+          <button class="signup" onclick = "show_hide()"> Join Now</button>
 
         </div>
         
@@ -144,6 +144,17 @@ Here it will be used for the drop down menu (TEMPORARILY ON THE HOME PAGE)-->
 
 
     </div>
+    
+    <script>
+      function show_hide(){
+        var x = document.getElementbyId();
+        if (x.style.display == 'none'){
+          x.style.display = 'block';
+        } else{
+          x.style.display = 'none';
+        }
+      }
+    </script> 
    
 
   </body>
