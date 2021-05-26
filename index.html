@@ -51,7 +51,7 @@ Here it will be used for the drop down menu (TEMPORARILY ON THE HOME PAGE)-->
 
           <button class="signup" onclick = "show_hide()"> Join Now</button>
 
-           <div class = "becomes" id ="becomes" style = "display:none">
+           <div class = "becomes" id ="becomes">
             <a class = "asstudent" href = "2classes.html"> As Student</a>
             <a class = "astutor" href = "2classes.html"> As Tutor</a>
             <a></a>
@@ -153,7 +153,7 @@ Here it will be used for the drop down menu (TEMPORARILY ON THE HOME PAGE)-->
     
     <script>
       function show_hide(){
-        var x = document.getElementbyId('becomes');
+        var x = document.getElementById('becomes');
         if (x.style.display == 'none'){
           x.style.display = 'block';
         } else{
