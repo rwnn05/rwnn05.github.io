@@ -22,6 +22,12 @@ header{
   transition: 0.5%;
 }
 
+header.sticky{
+  background: #4f7d9cff;
+  padding:10px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0, 0.05);
+}
+
 header .name{
   color: #fdf5e6ff;
   padding-left: 15px;
