@@ -19,13 +19,9 @@ header{
   z-index:1000;/*Prob makes it seen when FIXED*/
   display: flex;
   align-items: center;
-  transition: 1s;
-}
-
-header.sticky{
-  background: #60a4afff;
-  padding:10px 100px;
-  box-shadow: 0 5px 20px rgba(0,0,0, 0.05);
+  transition: 0.5s;
+    
+  /*linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%)*/ 
 }
 
 header .name{
@@ -89,7 +85,7 @@ p{
 
 .row{
   width: 100%;
-  min-height: 90vh;
+  height: 90vh;
   justify-content: center;
   background: #fdf5e6ff;
   position: relative;
@@ -221,7 +217,7 @@ p{
   color: #60a4afff;;
   font-size: 50px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 00px;
 }
 
@@ -330,7 +326,3 @@ p2{
   margin-top: 5px;
   text-align: left;
 }
-
-
-
-
