@@ -121,6 +121,7 @@ header .menu li a:hover{
   margin-left:165px;
   justify-content: space-between;
   padding: 15px;
+  display: none;
 }
 
 .asstudent{
