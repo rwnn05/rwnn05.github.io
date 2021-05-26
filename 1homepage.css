@@ -138,6 +138,7 @@ header .menu li a:hover{
 .becomes .asstudent:hover{
   background: #fa8072ff;
   color: #fdf5e6ff;
+  display: none;
 }
 
 
