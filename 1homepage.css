@@ -144,7 +144,6 @@ header .menu li a:hover{
 }
 
 
-
 .astutor{
   text-align: center;
   text-decoration: none;
@@ -164,26 +163,197 @@ header .menu li a:hover{
 
 .banner .content .display{
   position: relative;
-  display: flex;
-  width:100px;
-  height: 200px;
   align-self: center;
   justify-content: space-between;
-  margin-top: 15px;
-  padding-right: 20px;
+  display: flex;
+  width:750px;
+  height: 300px;
+  margin-top: 35px;
 }
 
-.banner .content .display img{
-  width: 90%;
-  height: 90%;
+/*Flipping icon cards code below */
+.banner .content .display button{
+  background: #8ebdc4ff;
+  width: 200px;
+  height: 250px;
+  margin-right: 15px;
+  border-style: none;
+  perspective: 1000px;
+  transition: 5s;
+}
+
+/*Lightbulb Card*/
+.lightbulb-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.lightbulb-container:focus .lightbulb-card{
+  transform: rotateY(180deg);
+}
+.lbfront, .lbback{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+ backface-visibility: hidden;
+}
+.lbfront{
+  padding: 75px 20px;
+  border: 2px solid #8ebdc4ff;
+  transition: .5s;
+}
+.lbback{
+  background-color: #fdf5e6ff; transform:rotateY(180deg);
+  }
+
+ /*Bookstack Card*/
+ .bookstack-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.bookstack-container:focus .bookstack-card{
+  transform: rotateY(180deg);
+}
+.bsfront, .bsback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.bsfront{
+  padding: 75px 20px;
+  border: 2px solid #8ebdc4ff;
+  transition: .5s;
+}
+.bsback{
+  background-color: #fdf5e6ff; transform:rotateY(180deg);
+}
+
+/*Calculator Card*/
+.calc-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.calculator-container:focus .calc-card{
+  transform: rotateY(180deg);
+}
+.cfront, .cback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.cfront{
+  padding: 75px 20px;
+  border: 2px solid #8ebdc4ff;
+  transition: .5s;
+}
+.cback{
+  background-color: #fdf5e6ff;  
+  transform:rotateY(180deg);
+}
+
+/*Chemistry Card*/
+.chem-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.chemistry-container:focus .chem-card{
+  transform: rotateY(180deg);
+}
+.chfront, .chback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.chfront{
+  padding: 75px 20px;
+  border: 2px solid #8ebdc4ff;
+  transition: .5s;
+}
+.chback{
+  background-color: #fdf5e6ff; 
+  transform:rotateY(180deg);
+}
+
+/*Protractor Card*/
+.pro-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.protractor-container:focus .pro-card{
+  transform: rotateY(180deg);
+}
+.pfront, .pback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+.pfront{
+  padding: 75px 20px;
+  border: 2px solid #8ebdc4ff;
+  transition: .5s;
+}
+.pback{
+  background-color: #fdf5e6ff; 
+  transform:rotateY(180deg);
+}
+
+
+.banner .content .display button img{
+  width: 110%;
+  height: 110%;
   object-fit: contain;
   margin-right: 45px;
   filter: sepia(45%);
 }
 
-.banner .content .display img:hover{
+.banner .content .display button:hover img{
   transform: scale(1.1);
   animation: shake 0.6s infinite;
+}
+
+/*To make sure that the border for each icon l
+ights up when hovered over*/
+.banner .content .display button:hover .lbfront{
+  border-color: #fdf5e6ff;
+}
+
+.banner .content .display button:hover .bsfront{
+  border-color: #fdf5e6ff;
+}
+
+.banner .content .display button:hover .cfront{
+  border-color: #fdf5e6ff;
+}
+
+.banner .content .display button:hover .chfront{
+  border-color: #fdf5e6ff;
+}
+
+.banner .content .display button:hover .pfront{
+  border-color: #fdf5e6ff;
 }
 
 /*Like a function to make animation 
