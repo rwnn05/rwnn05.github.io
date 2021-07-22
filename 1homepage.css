@@ -471,7 +471,7 @@ NOTE: the before and after result in TWO objects*/
   display: flex;
   justify-content: space-between;
   --margin-top: 2px;
-  min-height: 200px;
+  min-height: 100px;
 }
 .row1 .inside{
   position: relative;
@@ -499,15 +499,15 @@ h2{
 .row1 .inside .img1{
   position: relative;
   width: 100%;
-  height: 200%;
+  height: 100%;
   --margin:10px; 
 } 
 .row1 .inside .img1 img{
   position:absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 190%;
   border-radius: 30px;
   object-fit: cover;
 }
