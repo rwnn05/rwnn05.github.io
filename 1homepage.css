@@ -1,4 +1,7 @@
+/*Farro*/
 @import url('https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap');
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *
 {
@@ -207,7 +210,64 @@ header .menu li a:hover{
 }
 .lbback{
   background-color: #fdf5e6ff; transform:rotateY(180deg);
-  }
+  color: #63888E;
+}
+.lb-words1{
+  padding-left: 12px;
+  padding-right:12px;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  font-style:italic;
+  text-align: left;
+  word-spacing: 2px;
+  line-height: 1.2;
+}
+.lb-words2{
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13.5px;
+  text-align: left;
+  word-spacing: 2px;
+  line-height: 1.2;
+}
+.lb-dots{
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  display: flex;
+  width:100%;
+  height: 50px;
+}
+.lbdot-1{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.lbdot-2{
+  background: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.lbdot-3{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+
 
  /*Bookstack Card*/
  .bookstack-card{
@@ -233,7 +293,32 @@ header .menu li a:hover{
   transition: .5s;
 }
 .bsback{
-  background-color: #fdf5e6ff; transform:rotateY(180deg);
+  background-color: #fdf5e6ff; 
+  transform:rotateY(180deg);
+  color: #63888E;
+}
+.bs-words1{
+  padding-left: 12px;
+  padding-right:12px;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  font-style:italic;
+  text-align: left;
+  word-spacing: 1.5px;
+  line-height: 1.2;
+}
+.bs-words2{
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.5px;
+  text-align: left;
+  word-spacing: 1.5px;
+  line-height: 1;
 }
 
 /*Calculator Card*/
@@ -262,6 +347,62 @@ header .menu li a:hover{
 .cback{
   background-color: #fdf5e6ff;  
   transform:rotateY(180deg);
+  color: #63888E;
+}
+.c-words1{
+  padding-left: 12px;
+  padding-right:12px;
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  font-style:italic;
+  text-align: center;
+  word-spacing: 1.5px;
+  line-height: 1.2;
+}
+.c-words2{
+  padding-top: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13.5px;
+  text-align: left;
+  word-spacing: 1.5px;
+  line-height: 1.2;
+}
+.c-dots{
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  display: flex;
+  width:100%;
+  height: 50px;
+}
+.cdot-1{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.cdot-2{
+  background: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.cdot-3{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
 }
 
 /*Chemistry Card*/
@@ -290,6 +431,62 @@ header .menu li a:hover{
 .chback{
   background-color: #fdf5e6ff; 
   transform:rotateY(180deg);
+  color: #63888E;
+}
+.ch-words1{
+  padding-left: 12px;
+  padding-right:12px;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  font-style:italic;
+  text-align: left;
+  word-spacing: 1.5px;
+  line-height: 1.2;
+}
+.ch-words2{
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13.5px;
+  text-align: left;
+  word-spacing: 1.5px;
+  line-height: 1.2;
+}
+.ch-dots{
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  display: flex;
+  width:100%;
+  height: 50px;
+}
+.chdot-1{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.chdot-2{
+  background: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.chdot-3{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
 }
 
 /*Protractor Card*/
@@ -318,6 +515,62 @@ header .menu li a:hover{
 .pback{
   background-color: #fdf5e6ff; 
   transform:rotateY(180deg);
+  color: #63888E;
+}
+.p-words1{
+  padding-left: 12px;
+  padding-right:12px;
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  font-style:italic;
+  text-align: left;
+  word-spacing: 1.5px;
+  line-height: 1.2;
+}
+.p-words2{
+  padding-top: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13.5px;
+  text-align: left;
+  word-spacing: 1.5px;
+  line-height: 1.2;
+}
+.p-dots{
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  display: flex;
+  width:100%;
+  height: 50px;
+}
+.pdot-1{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.pdot-2{
+  background: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 10px;
+}
+.pdot-3{
+  color: #63888E;
+  width: 15px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid;
 }
 
 
