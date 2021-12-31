@@ -717,6 +717,22 @@ NOTE: the before and after result in TWO objects*/
   height: 70vh; 
 }
 
+.events{
+  text-align: center; 
+  position: relative;
+  padding: 40px;
+  background:  #8ebdc4ff;
+  height: 20vh; 
+  color:#fdf5e6ff; 
+}
+ 
+.events .column4 h3 {
+  font-weight: 700;
+  font-size: 35px;
+  margin-top: 00px;
+  margin-bottom: -15px;
+  text-transform: uppercase;
+}
 
 .row1{
   position: relative;
