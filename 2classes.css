@@ -54,6 +54,9 @@ header .menu li a:hover{
   background: #fa8072ff;
 }
 
+header .menu li a.active{
+  background:  #2d4c6e;
+}
 
 /*Here is the ACTUAL CSS for the ACTUAL PAGE*/
 
