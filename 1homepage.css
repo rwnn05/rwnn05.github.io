@@ -57,6 +57,11 @@ header .menu li a:hover{
   background: #fa8072ff;
 }
 
+header .menu li a: active{
+  background:  #fdf5e6ff;
+  color: #2d4c6e;
+}
+
 .banner{
   position: relative;
   width: 100%;
@@ -647,7 +652,6 @@ work */
   transform: scale(1.2);
   color: #fa8072ff;
 }
-
 .banner .content a:hover .arrow{
   transform: scale(1.2);
   background: #fa8072ff;
@@ -662,7 +666,6 @@ work */
 
 
 /* How to make the ARROW under "Learn More"
-
 NOTE: the before and after result in TWO objects*/
 .banner .arrow::after,.banner .arrow::before{
   position: absolute;
@@ -714,7 +717,7 @@ NOTE: the before and after result in TWO objects*/
   position: relative;
   padding: 40px;
   background:  #fdf5e6ff;
-  height: 65vh; 
+  height: 80vh; 
 }
 
 .events{
@@ -876,4 +879,3 @@ h2{
   object-fit: contain;
   filter: invert(90%) sepia(35%);
 }
-
