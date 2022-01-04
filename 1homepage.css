@@ -815,6 +815,11 @@ h2{
   color: #fdf5e6ff;
 }
 
+.ending .logo{
+  width: 30px;
+  height: 30px; 
+}
+
 .ending .logo img{
   width: 100%;
   height: 100%;
